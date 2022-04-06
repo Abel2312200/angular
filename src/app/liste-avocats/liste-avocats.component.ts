@@ -25,7 +25,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     },
     {
       nom: 'DeLa Roche',
@@ -34,7 +34,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     }
     ,
     {
@@ -44,7 +44,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     }
     ,
     {
@@ -54,7 +54,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     }
     ,
     {
@@ -64,7 +64,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     }
     ,
     {
@@ -74,7 +74,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     },
     {
       nom: 'DeLa Roche',
@@ -83,7 +83,7 @@ export class ListeAvocatsComponent implements OnInit {
       procesGagne : 21,
       nombreEtoile : 4,
       anneeExp : 12,
-      photo :'assets/image avocats/photo.jpg'
+      photo :'assets/images/olegdudko190803008.jpg'
     }
   ];
 
