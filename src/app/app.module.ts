@@ -7,6 +7,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ListeAvocatsComponent } from './liste-avocats/liste-avocats.component';
 import { InfoAvocatsComponent } from './info-avocats/info-avocats.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InfoAvocatsComponent } from './info-avocats/info-avocats.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
