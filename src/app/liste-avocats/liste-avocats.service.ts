@@ -10,13 +10,12 @@ import { IAvocat } from "./Avocat";
 )
 
 export class ListeAvocatService{
-  private readonly HOTELS_ApI_URL = 'fichier.json';
+  private readonly HOTELS_ApI_URL = 'http://localhost:3000/avocat';
   constructor(private http : HttpClient){}
   public getAvocats() : Observable<IAvocat[]>
   {
     return this.http.get<IAvocat[]>(this.HOTELS_ApI_URL).pipe(
       tap(hotels=> console.log('Avocat: ', hotels)),
-      catchError(this.handleError)
     );
   }
   private handleError(error: HttpErrorResponse) {
