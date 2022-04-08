@@ -3,6 +3,7 @@ import { InfoAvocatsComponent } from '../info-avocats/info-avocats.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { IAvocat } from './Avocat';
 import { ListeAvocatService } from './liste-avocats.service';
+import { SharedService } from '../shared.service';
 @Component({
   selector: 'app-liste-avocats',
   templateUrl: './liste-avocats.component.html',
@@ -11,7 +12,8 @@ import { ListeAvocatService } from './liste-avocats.service';
 export class ListeAvocatsComponent implements OnInit {
   public listeDesAvocats : IAvocat[]=[]
   public errorMsg: string | undefined ;
-  constructor(private modalService: NgbModal, private AvocatService : ListeAvocatService ) {}
+  constructor(private modalService: NgbModal, private AvocatService : ListeAvocatService,  private avocatS : SharedService) {
+  }
   ngOnInit(): void {
     this.AvocatService.getAvocats().subscribe(
       {
@@ -20,7 +22,9 @@ export class ListeAvocatsComponent implements OnInit {
       }
     )
   }
-  openInfo(){
+
+  openInfo(a : IAvocat){
+    this.avocatS.setAvocat(a);
     this.modalService.open(InfoAvocatsComponent);
   }
 

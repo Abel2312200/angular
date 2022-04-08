@@ -16,6 +16,7 @@ export class ListeAvocatService{
   {
     return this.http.get<IAvocat[]>(this.HOTELS_ApI_URL).pipe(
       tap(hotels=> console.log('Avocat: ', hotels)),
+      catchError(this.handleError)
     );
   }
   private handleError(error: HttpErrorResponse) {
