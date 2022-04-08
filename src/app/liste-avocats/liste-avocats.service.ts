@@ -10,7 +10,7 @@ import { IAvocat } from "./Avocat";
 )
 
 export class ListeAvocatService{
-  private readonly HOTELS_ApI_URL = '/src/api/fichier.json';
+  private readonly HOTELS_ApI_URL = 'fichier.json';
   constructor(private http : HttpClient){}
   public getAvocats() : Observable<IAvocat[]>
   {
